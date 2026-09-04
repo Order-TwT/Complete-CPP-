@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int sum(int a, int b){
+    cout<<"Using function with 2 arguements"<<endl;
+    return a+b;
+}
+
+int sum(int a, int b, int c){
+    cout<<"Using function with 3 arguements"<<endl;
+    return a+b+c;
+}
+
+
+// Function overloading means:
+// Multiple functions can have the same name, as long as their parameters are different.
+int main(){
+    
+    cout<<"The sum of 3 and 6 is "<<sum(3,6)<<endl;
+    cout<<"The sum of 3, 7 and 6 is "<<sum(3,7,6)<<endl;
+
+    return 0;
+}
